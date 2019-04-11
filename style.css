@@ -1,0 +1,7 @@
+.letterUp:first-letter{
+text-transform: uppercase;
+}
+
+.letterLower::first-letter{
+    text-transform: lowercase;
+}
