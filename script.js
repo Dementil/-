@@ -12,12 +12,8 @@ ________________________________________________________________________________
 
 var str = document.getElementById("str");
 
-function modStrUp(elem) {
-    elem.style.textTransform = "uppercase";
-};
-
-function modStrLower(elem) {
-    elem.style.textTransform = "lowercase";
+function modStr(elem, registr) {
+    elem.style.textTransform = registr;
 };
 
 function modFirstLetter(elem) {
@@ -28,6 +24,6 @@ function modFirstLetter(elem) {
     }
 };
 
-modStrUp(str); //перевод строки в верхний регистр
-modStrLower(str); //перевод строки в нижний регистр
+modStr(str, "uppercase"); //перевод строки в верхний регистр
+modStr(str, "lowercase"); //перевод строки в нижний регистр
 modFirstLetter(str); //изменение первой буквы строки в зависиости от регимтра остального текста
